@@ -8,7 +8,7 @@
 2
 '''
 
-# coins = [1, 1, 1, 1, 0, 0, 1]
+coins = [1, 1, 1, 1, 0, 0, 1]
 # coins = []
 # add = True
 # print("Введите числа 1 или 0. Для выхода нажмите 'q': ")
@@ -110,12 +110,11 @@
 Задача 3 второй вариант решения
 '''
 
-# n = 16
-# temp = 0
-# count = 0
+# n = 18
+# temp = 1
+# count = 1
 
 # while temp <= n:
+#     print(temp, end = " ")
 #     temp = 2 ** count
 #     count += 1
-#     if temp <= n:
-#         print(temp, end = " ")
