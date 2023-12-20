@@ -201,3 +201,42 @@ from secrets import randbelow as random
 #         if i.upper() in v:
 #             points += k
 # print(points)
+
+'''
+Задача на дом из семинара.
+Напишите программу для печати всех уникальных
+значений в словаре. 
+'''
+
+# list1 = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {
+#     "VII": " S005 "}, {" V ": " S009 "}, {" VIII": " S007 "}]
+
+# res = []
+# for i in list1:
+#     for v in i.values():
+#         if v not in res:
+#             res.append(v)
+# print(res)
+
+'''
+Задача на дом из семинара. Второй вариант решения
+'''
+# list1 = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {
+#     "VII": " S005 "}, {" V ": " S009 "}, {" VIII": " S007 "}]
+
+# res = set()
+# for i in list1:
+#     for v in i.values():
+#         res.add(v)
+# print(res)
+
+'''
+Задача на дом из семинара. Третий вариант решения
+'''
+
+# list1 = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {
+#     "VII": " S005 "}, {" V ": " S009 "}, {" VIII": " S007 "}]
+
+# res = set(v for i in list1  for v in i.values())
+
+# print(res)

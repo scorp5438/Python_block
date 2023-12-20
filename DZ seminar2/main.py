@@ -118,3 +118,10 @@ coins = [1, 1, 1, 1, 0, 0, 1]
 #     print(temp, end = " ")
 #     temp = 2 ** count
 #     count += 1
+
+# n = 18
+# temp = 1
+
+# while temp <= n:
+#     print(temp, end = " ")
+#     temp *= 2

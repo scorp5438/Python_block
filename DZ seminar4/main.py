@@ -27,7 +27,7 @@
 собрать за один заход собирающий модуль, находясь перед некоторым кустом
 заданной во входном файле грядки.
 '''
-circule = [2, 5, 8, 13, 22, 11, 1, 14]
+# circule = [2, 5, 8, 13, 22, 11, 1, 14]
 
 # circule.append(circule[0])
 # circule.insert(0, circule[-2])
@@ -37,11 +37,16 @@ circule = [2, 5, 8, 13, 22, 11, 1, 14]
 #     if temp > res:
 #         res = temp
 # print(res)
+
 '''
 Задача 2 Оптимизированный вариант
 '''
+
+# circule = [14, 5, 8, 13, 22, 11, 23, 15]
+
 # circule.append(circule[0])
-# circule.insert(0, circule[2])
+# circule.insert(0, circule[-2])
+
 # res = sum(circule[0:3])
 # temp = sum(circule[0:3])
 # for i in range(0, len(circule)-3):
