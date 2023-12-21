@@ -14,6 +14,18 @@ Input: a a a b c a a d c d d
 # print(new_str)
 
 '''
+Второй вариант
+'''
+
+# string = "a a a b c a a d c d d"
+# string = string.split()
+# new_str = ''
+
+# for i in range(len(string)):
+#     new_str += f"{string[i]}_{str(string[:i+1].count(string[i]))} "
+# print(new_str)
+
+'''
 Пользователь вводит текст(строка). Словом считается
 последовательность непробельных символов идущих
 подряд, слова разделены одним или большим числом
