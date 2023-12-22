@@ -48,7 +48,6 @@ Output: [4, 5, 1, 2, 3]
 # lst1 = [1,2,3,4,5]
 # print(lst1[-k:],lst1[:-k])
 
-
 # new_list = [*my_list[len(my_list)-k:], *my_list[0:len(my_list)-k]]
 
 # print(new_list)
