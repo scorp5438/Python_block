@@ -141,3 +141,5 @@ Sample Output:
 #     if d.get(i):
 #         result.append((i, d[i]))
 # print(*sorted(result))
+
+# print(*sorted(d.items()))
