@@ -18,7 +18,7 @@ A = 2; B = 3 -> 8
 # x = 2
 # y = 10
 # def multiplication(a, b):
-#     if b <= 1: return a
+#     if b == 1: return a
 #     return multiplication(a * x, b - 1)
 # print(multiplication(x, y))
 
