@@ -28,3 +28,44 @@
 
 
 # print(qick_sort(list1))
+
+
+'''
+В списке хранятся числа. Нужно выбрать только чётные числа и составить список пар
+(число; квадрат числа).
+Пример: 1 2 3 5 8 15 23 38
+Получить: [(2, 4), (8, 64), (38, 1444)]
+'''
+
+# my_list = [1, 2, 3, 5, 8, 15, 23, 38]
+
+# func = lambda x: x*x
+
+# res = [(i, func(i)) for i in my_list if i % 2 == 0]
+# res = [(i, i*i) for i in my_list if i % 2 == 0]
+
+# print(res)
+
+'''
+**************************************************************************************
+'''
+
+# my_list = [i for i in range(1, 20)]
+
+# print(my_list)
+
+# my_list = list(map(lambda x: x + 10, my_list))
+# print(my_list)
+
+'''
+**************************************************************************************
+'''
+
+# data = '5 48 415 45 87 1 5 65 415'
+# # print(data)
+
+# data = list(map(int, data.split()))
+# data = [int(i) for i in data.split()]
+# # print(data)
+
+# print(data)
