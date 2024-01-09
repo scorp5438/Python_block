@@ -32,11 +32,11 @@ A = 2; B = 3 -> 8
 '''
 
 
-# def sum(a, b):
-#     if b <= 0:
-#         return a
-#     # return sum(a + 1, b - 1)
-#     return a + sum(1, b - 1)
+def sum(a, b):
+    if b <= 0:
+        return a
+    # return sum(a + 1, b - 1)
+    return a + sum(1, b - 1)
 
 
-# print(sum(11, 4))
+print(sum(11, 4))
