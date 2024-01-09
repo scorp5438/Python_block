@@ -38,12 +38,12 @@ max 10
 # list1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 
 
-# def search(collection, min = 7, max = 10):
+# def search(arr, min=7, max=10):
 #     res = []
-#     for i in range(len(collection)):
-#         if collection[i] >= min <= max:
+#     for i in range(len(arr)):
+#         if arr[i] >= min and arr[i] <= max:
 #             res.append(i)
 #     return res
+
+
 # print(search(list1))
-
-
