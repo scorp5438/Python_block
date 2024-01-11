@@ -12,8 +12,10 @@
 Вывод:
 3 3 2 12
 '''
+# list1 = [3, 1, 3, 4, 2, 4, 12]
+# list2 = [4, 15, 43, 1, 15, 1]
 
-# TODO
+# print([i for i in list1 if i not in list2])
 
 '''
 Задача №41. Решение в группах
@@ -51,7 +53,13 @@
 2
 '''
 
-# TODO
+# my_list = [1, 2, 3, 1, 2, 3, 1, 3, 3]
+
+# res = 0
+# for i in set(my_list):
+#     if abs(my_list.count(i)) >= 2:
+#         res += my_list.count(i) // 2
+# print(res)
 
 '''
 Задача №45. Решение в группах
@@ -62,8 +70,7 @@
 По данному числу k выведите все пары дружественных
 чисел, каждое из которых не превосходит k. Программа
 получает на вход одно натуральное число k, не
-превосходящее 10 в 5
-. Программа должна вывести все
+превосходящее 10 в 5. Программа должна вывести все
 пары дружественных чисел, каждое из которых не
 превосходит k. Пары необходимо выводить по одной в
 строке, разделяя пробелами. Каждая пара должна быть
@@ -74,5 +81,73 @@
 Вывод:
 220 284
 '''
+# from time import time as t
+# n = 25000
+# res = {}
+# list1 = []
 
-# TODO
+# start = t()
+
+# def find(x):
+#     summ = 0
+#     for i in range(1, x):
+#         if x % i == 0:
+#             summ += i
+#         res[x] = summ
+#     return res
+
+
+'''
+Генератор списков
+'''
+
+# def find(x):
+#     res[x] = sum([i for i in range(1, x) if x % i == 0])
+#     return res
+
+
+# for i in range(2, n + 1):
+#     find(i)
+# print(res)
+
+# for k, v in res.items():
+#     for k2, v2 in res.items():
+#         if k2 == v and v2 == k and k != v:
+#             list1.append(k)
+
+
+'''
+Генератор списков
+'''
+# list1 = [k for k, v in res.items()
+#            for k2, v2 in res.items() if k2 == v and v2 == k and k != v]
+
+# end = t()
+
+# for i in range(2, len(list1)+1, 2):
+#     print(*list1[i-2:i])
+
+# print(end - start)
+'''
+Второй вариант решения
+'''
+# from time import time as t
+
+# n = 25_000
+# list1 = []
+
+# start = t()
+
+# def find(x):
+#     summ = sum([i for i in range(1, x//2 + 1) if x % i == 0])
+#     return summ
+
+
+
+# for i in range(2, (n + 1)):
+#     j = find(i)
+#     if i < j and i == find(j) and i != j:
+#         print(i, j)
+
+# end = t()
+# print(end - start)

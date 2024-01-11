@@ -23,6 +23,13 @@
 #     my_list.append(start + (i - 1) * step)
 # print(my_list)
 
+'''
+Решение через генератор списков
+'''
+
+# my_list = [start + i * step for i in range(count)]
+
+# print(my_list)
 
 '''
 Задача 32: Определить индексы элементов массива (списка),
@@ -41,9 +48,20 @@ max 10
 # def search(arr, min=7, max=10):
 #     res = []
 #     for i in range(len(arr)):
-#         if arr[i] >= min and arr[i] <= max:
+#         if min <= list1[i] <= max:
 #             res.append(i)
 #     return res
 
 
-# print(search(list1))
+# print(search(list1, -10, 0))
+
+'''
+Решение через генератор списков
+'''
+
+# list1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+
+# min=-10
+# max=0
+# res = [i for i in range(len(list1)) if  min <= list1[i] <= max]
+# print(res)
