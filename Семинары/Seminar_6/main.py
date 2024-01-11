@@ -37,7 +37,23 @@
 2
 '''
 
-# TODO
+# arr = [1, 2, 3, 4, 25,  5, 28, 7,  29, 8, 9, 28, 4]
+# count = 0
+# for i in range(1, len(arr)-1):
+#     if arr[i-1] < arr[i] > arr[i+1]:
+#         count += 1
+# print(count)
+
+'''
+Вариант решения через генератор списка
+'''
+
+# arr = [1, 2, 3, 4, 25,  5, 28, 7,  29, 8, 9, 28, 4]
+
+# res = len([i for i in range(1, len(arr)-1) if arr[i-1] < arr[i] > arr[i+1]])
+
+# print(res)
+
 
 '''
 Задача №43. Решение в группах
@@ -81,6 +97,7 @@
 Вывод:
 220 284
 '''
+
 # from time import time as t
 # n = 25000
 # res = {}
@@ -90,7 +107,7 @@
 
 # def find(x):
 #     summ = 0
-#     for i in range(1, x):
+#     for i in range(1, x // 2 + 1):
 #         if x % i == 0:
 #             summ += i
 #         res[x] = summ
@@ -102,7 +119,7 @@
 '''
 
 # def find(x):
-#     res[x] = sum([i for i in range(1, x) if x % i == 0])
+#     res[x] = sum([i for i in range(1, x // 2 + 1) if x % i == 0])
 #     return res
 
 
@@ -128,6 +145,8 @@
 #     print(*list1[i-2:i])
 
 # print(end - start)
+
+
 '''
 Второй вариант решения
 '''
@@ -141,7 +160,6 @@
 # def find(x):
 #     summ = sum([i for i in range(1, x//2 + 1) if x % i == 0])
 #     return summ
-
 
 
 # for i in range(2, (n + 1)):
