@@ -98,12 +98,17 @@
 220 284
 '''
 
+'''
+Первый вариант 50_000 примерно за 140.58 сек
+'''
+
 # from time import time as t
-# n = 25000
+# n = 50000
 # res = {}
 # list1 = []
 
 # start = t()
+
 
 # def find(x):
 #     summ = 0
@@ -114,9 +119,36 @@
 #     return res
 
 
+# for i in range(2, n + 1):
+#     find(i)
+# # print(res)
+
+# for k, v in res.items():
+#     for k2, v2 in res.items():
+#         if k2 == v and v2 == k and k != v and v > k:
+#             print(k, v)
+
+
+# # for i in range(2, len(list1)+1, 2):
+# #     print(*list1[i-2:i])
+
+# end = t()
+
+# print(end - start)
+
+
 '''
-Генератор списков
+Второй вариант 50_000 примерно за 70.37 сек
 '''
+
+
+# from time import time as t
+# n = 50000
+# res = {}
+# list1 = []
+
+# start2 = t()
+
 
 # def find(x):
 #     res[x] = sum([i for i in range(1, x // 2 + 1) if x % i == 0])
@@ -125,37 +157,31 @@
 
 # for i in range(2, n + 1):
 #     find(i)
-# print(res)
-
-# for k, v in res.items():
-#     for k2, v2 in res.items():
-#         if k2 == v and v2 == k and k != v:
-#             list1.append(k)
+# # print(res)
 
 
-'''
-Генератор списков
-'''
 # list1 = [k for k, v in res.items()
-#            for k2, v2 in res.items() if k2 == v and v2 == k and k != v]
+#          for k2, v2 in res.items() if k2 == v and v2 == k and k != v]
 
-# end = t()
 
 # for i in range(2, len(list1)+1, 2):
 #     print(*list1[i-2:i])
 
-# print(end - start)
+# end2 = t()
+
+# print(end2 - start2)
 
 
 '''
-Второй вариант решения
+Третий вариант решения 50_000 примерно за 27.21
 '''
+
+
 # from time import time as t
 
-# n = 25_000
-# list1 = []
+# n = 50_000
 
-# start = t()
+# start3 = t()
 
 # def find(x):
 #     summ = sum([i for i in range(1, x//2 + 1) if x % i == 0])
@@ -167,5 +193,5 @@
 #     if i < j and i == find(j) and i != j:
 #         print(i, j)
 
-# end = t()
-# print(end - start)
+# end3 = t()
+# print(end3 - start3)

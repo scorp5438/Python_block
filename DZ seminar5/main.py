@@ -7,7 +7,7 @@ A = 2; B = 3 -> 8
 '''
 
 
-# def multiplication(a, b):
+# def multiplication(a, b): b = 2
 #     if b == 0:
 #         return 1
 #     return a * multiplication(a, b - 1)
