@@ -69,3 +69,31 @@
 # # print(data)
 
 # print(data)
+
+'''
+**************************************************************************************
+'''
+
+# list1 = [1, 2, 5, 4, 8, 4, 8, 9]
+
+
+# # def func2(x): return x % 2 == 0
+# func2 = lambda x: x % 2 == 0
+
+# # def func1(x): return x * x
+# func1 = lambda x: x * x 
+
+# list1 = map(func2, list1)
+
+# for i in list1:
+#     print(func1(i))
+
+# list1 = list(filter(func2, list1))
+# print(list1)
+
+# print(map(func1, list1))
+
+# for i in list1:
+#     print(f"[{func1(i)}]")
+
+

@@ -42,18 +42,18 @@ max 10
 Вывод: [1, 9, 13, 14, 19]
 '''
 
-# list1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+list1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 
 
-# def search(arr, min=7, max=10):
-#     res = []
-#     for i in range(len(arr)):
-#         if min <= list1[i] <= max:
-#             res.append(i)
-#     return res
+def search(arr, min=7, max=10):
+    res = []
+    for i in range(len(arr)):
+        if min <= list1[i] <= max:
+            res.append(i)
+    return res
 
 
-# print(search(list1, -10, 0))
+print(search(list1))
 
 '''
 Решение через генератор списков

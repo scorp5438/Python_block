@@ -23,13 +23,13 @@
 '''
 
 
-def factorial(num):
-    if num == 0:
-        return 1
-    return num * factorial(num - 1)
+# def factorial(num):
+#     if num == 0:
+#         return 1
+#     return num * factorial(num - 1)
 
 
-print(factorial(5))
+# print(factorial(5))
 
 '''
 Хакер Василий получил доступ к классному журналу и
@@ -70,6 +70,7 @@ Output: 1 3 3 3 1
 Input: 5
 Output: yes 
 '''
+
 # def Prime_number(n):
 #     return 'yes' if len([i for i in range(2,n) if n % i == 0]) == 0 else 'no'
 
@@ -88,20 +89,16 @@ Input: 2 -> 3 4
 Output: 4 3
 '''
 
-x = 4
+# x = 4
 
 
-def reverse(n):
-    if n == 0:
-        return '+'
-    a = input("Введите число: ")
-    return reverse(n - 1) + a
+# def reverse(n):
+#     if n == 0:
+#         return '+'
+#     a = input("Введите число: ")
+#     return reverse(n - 1) + a
 
 
-print(reverse(x))
+# print(reverse(x))
 
 
-# def reverse_str(res):
-#     return x[::-1]
-
-# print(reverse_str(x))
