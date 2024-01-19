@@ -13,6 +13,7 @@
 Вывод:
 Парам пам-пам
 '''
+
 stroka = "пара-ра-рам"
 
 list_poem = stroka.split()
