@@ -81,7 +81,7 @@
 # func2 = lambda x: x % 2 == 0
 
 # # def func1(x): return x * x
-# func1 = lambda x: x * x 
+# func1 = lambda x: x * x
 
 # list1 = map(func2, list1)
 
@@ -96,4 +96,6 @@
 # for i in list1:
 #     print(f"[{func1(i)}]")
 
+# a = [['u', 1, ], ['b', 0], ['c', 9], ['a', 3]]
+# a.sort(key=lambda x: x[1])
 
