@@ -26,3 +26,15 @@
 # for i in range(len(lst)):
 #     if i < 9: print(f"{i+1} {int('robot' == lst[i]):^7} {int('human' == lst[i]):^5}")
 #     elif i >= 9: print(f"{i+1} {int('robot' == lst[i]):^6} {int('human' == lst[i]):^5}")
+
+
+# import random
+
+# lst = ['robot'] * 10
+# lst += ['human'] * 10
+
+# random.shuffle(lst)
+
+# print(f"{'№':<2}{'robot':^7}{'human':^5}")
+# for i in range(len(lst)):
+#     print(f"{i+1:<2}{int('robot' == lst[i]):^7}{int('human' == lst[i]):^5}")
